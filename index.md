@@ -12,7 +12,7 @@ active: home
     </a>
 </p>
 
-## t-CyCIF
+## SYLARAS
 ### Tissue-based cyclic immunofluorescence
 
 * Works with a wide range of FFPE human and mouse tumors and tissues.
