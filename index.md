@@ -193,8 +193,7 @@ more than minimal risk to the subjects.”
 
 ### Funding
 
-This work was made possible by NIH grants P50-GM107618, U54-HL127365 and the
-Ludwig Center at Harvard.
+This work was made possible by American Cancer Society Postdoctoral Fellowship award PF-16-197-01-LIB awarded to Gregory J. Baker and the support of the Ludwig Center at Harvard Medical School.
 
 ### Publications
 
