@@ -9,3 +9,5 @@ sass:
 plugins:
     - jekyll-redirect-from
 exclude: []
+
+google_analytics: UA-119988389-2
