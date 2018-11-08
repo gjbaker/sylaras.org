@@ -1,4 +1,4 @@
-# cycif.org website
+# sylaras.org website
 
 ## Local build instructions
 
