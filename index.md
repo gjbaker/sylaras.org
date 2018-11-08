@@ -20,7 +20,7 @@ active: home
          width="500">
 </figure>
 
-### Tissue-based cyclic immunofluorescence
+### SYLARAS is...
 
 * Agnostic to the platform for single-cell data acquisition (e.g. flow cytometry, mass cytometry, image-based cytometry methods).
 * Modular and extensible experimental and computational workflows.
