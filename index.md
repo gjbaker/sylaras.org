@@ -13,32 +13,30 @@ active: home
 </p>
 
 ## SYLARAS
+
+<figure class="image">
+    <img src="{{ "/assets/img/fig0.png" | absolute_url }}"
+         alt="Figure 1"
+         width="500">
+</figure>
+
 ### Tissue-based cyclic immunofluorescence
 
-* Works with a wide range of FFPE human and mouse tumors and tissues.
-* Up to 60-plex imaging of some tissues &mdash; compatible with H&E in final
-  round.
+* Agnostic to the platform for single-cell data acquisition (e.g. flow cytometry, mass cytometry, image-based cytometry methods).
+* Modular and extensible experimental and computational workflows.
 * Uses conventional wide-field, confocal and super-resolution microscopes.
 * Antibodies can be selected based on the requirements of the project: no
   proprietary or unusual reagents required.
 
-The key publication for t-CyCIF is Lin et al. (2018), *Highly multiplexed
-immunofluorescence imaging of human tissues and tumors using t-CyCIF and
-conventional optical microscopes*.
+The key publication for SYLARAS is Baker et al. (2018), *Sytemic Lymphoid Architecture Response Assessment (SYLARAS): A Computational Tool for Discovery-based Immunophenotyping*.
 
 * [Read the manuscript](https://doi.org/10.1101/151738)
-* [Access supporting data and software code](http://lincs.hms.harvard.edu/lin-elife-2018/)
+* [Access supporting data and software code](https://github.com/gjbaker/gbm_immunosuppression/tree/dev)
 * [Learn more and get training](training)
-* Please cite this resource as `(CycIF.org, RRID:SCR_016267)`
+* Please cite this resource as `(SYLARAS.org, RRID:SCR_016267)`
 
-t-CyCIF is a method for highly multiplexed immunofluorescence imaging
-of [formalin-fixed, paraffin-embedded](https://en.wikipedia.org/wiki/Histology)
-(FFPE) specimens mounted on glass slides, the most widely used specimens for
-histopathological diagnosis of cancer and other diseases. A related CyCIF method
-is used to image cells grown in culture (see publications). t-CyCIF generates up
-to 60-plex images using an iterative process (a cycle) in which conventional
-low-plex fluorescence images are repeatedly collected from the same sample and
-then assembled into a high dimensional representation.
+SYLARAS is a computational tool for the comprehensive statistical analysis and concise visualization of single-cell data at scale study of immunologic response. A data-analytical framework written the in the Python programming language and run at the command-line of a personal computer, SYLARAS transforms single-cell data at scale into a comprehensive and concise visual compendium of the time and tissue-dependent changes occurring in the systemic cellular immune system in response to experimental immune perturbation.
+
 
 <div class="embed-container">
     <iframe src="https://player.vimeo.com/video/269885646"
@@ -51,39 +49,34 @@ then assembled into a high dimensional representation.
 </div>
 
 
+### Innovation
 
-t-CyCIF requires no specialized instruments or reagents and is compatible with
-super-resolution imaging. We have shown that t-CyCIF can be used to quantify
-signal transduction cascades, measure the levels of tumor antigens and determine
-immunophenotypes using immune cell lineage markers. The key features of t-CyCIF
-are that it is simple to implement on existing microscopes, it requires no
-special or proprietary reagents and antibodies can be combined as needed to
-investigate specific questions.
+Contemporary instruments for flow and mass cytometry allow for the rapid collection of large experimental datasets pertinent to the study of cancer immunology. However, their manual analysis through graphical user interface (GUI) software programs is prohibited by their size and multiplexity. As a postdoctoral fellow in Dr. Sorger’s lab, I have worked to address the disparity between the acquisition and analysis of single-data by developing a complementary set of experimental and computational workflows relevant to the longitudinal, multi-tissue assessment of cellular immune composition in response to immunologic perturbation (Fig. 1). The technology, referred to as Systemic Lymphoid Architecture Response Assessment (SYLARAS), uses immunophenotyping as a means to infer cell states differentially influenced by a given immune stimulus through the detection and quantification of changes in cell frequency.
 
-### The t-CyCIF Process
+### The SYLARAS Workflow
 
-In t-CyCIF, ~5 µm thick are cut from FFPE blocks, the standard in most
-histopathology services, followed by dewaxing and antigen retrieval in the usual
-manner; to reduce auto-fluorescence a cycle of “pre-staining” is performed.
-Subsequent t-CyCIF cycles each involve four steps (Figure 1): (i)
-immuno-staining with antibodies against protein antigens (three antigens per
-cycle in the implementation described here) (ii) staining with a DNA dye
-(commonly Hoechst 33342) to mark nuclei and facilitate image registration across
-cycles (iii) four-channel imaging at low and high magnifications (iv)
-fluorophore bleaching followed by a wash step and then another round of
-immuno-staining. The signal-to-noise ratio often increases with cycle number.
-When no more t-CyCIF cycles are to be performed, the specimen is stained with
-H&E to enable conventional histopathology review. Individual image panels are
-stitched together and registered across cycles followed by image processing and
-segmentation to identify cells and other structures.
+In SYLARAS, (1) an immune perturbagen (glioblastoma cancer cells in this case) is administered to a cohort of mice; a cohort of age-matched control mice receive vehicle only. (2) Various lymphoid tissues are harvested at fixed time points after perturbagen administration. (3) Tissues are processed into single-cell suspensions and plated in a 96 well V-bottom plate. (4) Cells are immunolabeled with an optimized multicolor immunofluorescence panel (OMIP) consisting of 11 fluorophore-conjugated antibodies targeting various cell surface antigens and stained with a fixable viability dye (FVD). (5) Single-cell data are acquired in a high-throughput manner by flow cytometry. (6) Raw data files are spectrally deconvolved and gated for viable singlets using conventional approaches. (7) The cleaned data undergo bias curation (see figure 2 below) and are computationally analyzed by the SYLARAS algorithm. workflow for discovery-based immunophenotyping
 
 <figure class="image">
-    <img src="{{ "/assets/img/figure1.jpg" | absolute_url }}"
+    <img src="{{ "/assets/img/fig1.png" | absolute_url }}"
          alt="Figure 1"
          width="700">
     <figcaption>
-        Figure 1: Assembling a high-plex t-CyCIF image using an
-        iterative process
+        Figure 1: The SYLARAS workflow for discovery-based immunophenotyping
+    </figcaption>
+</figure>
+
+### Cell State Identification Through Unidimensional Gating
+
+The SYLARAS computational algorithm consists of an open-source data-analytical framework written in the Python programming language and executed on the command-line. The algorithm sidesteps the requirement for complex multidimensional gating strategies in the identification of immunophenotypically-distinct cell states by asking the investigator to perform a simplified unidimensional gating procedure prior to programmatically analyzing the data (Fig. 2). The goal of this procedure is to distinguish between experimental background and on-target antibody labeling for each immunomarker and is expedited by formatting the study’s histograms (per sample per immunomarker) as a scrolling HTML table viewable with a web browser. The signal intensity distribution of unlabeled or isotype-labeled control cells is superimposed on each histogram as a fiducial guide to aid in the selection of an appropriate gate by revealing how signal intensities associated with autofluorescence/off-target antibody binding compare to experimental signal intensity distributions (Fig. 2a-c).
+Once curated, the gate values are input into the SYLARAS algorithm for programmatic subtraction from the signal intensity values of their corresponding histograms. This causes the gate to become the zero point and background signal intensities to become negative (Fig. 2d). Since immunomarker signals are now binarized according to mathematical sign, the algorithm bins cells in the dataset among 2M orthants of an M-dimensional hypercube, where M is the number of immunomarkers and each orthant represents a unique immunophenotype (e.g. CDx+, CDy-, CDz+…) (Fig. 2e). This allows thousands of immunophenotypes to be identified without the non-commutativity and labor-intensity of manual gating in multiple dimensions. SYLARAS then computes statistics on immunophenotypes of interest and displays the results on each as an information-dense graphical dashboard (Fig. 3). A set of SYLARAS dashboards serves as a concise and comprehensive compendium of the time and tissue-dependent changes occurring in the systemic cellular immune system in response to a given immune perturbagen (e.g. cancer, viruses, bacteria, autoimmunity model, vaccination, immunotherapy, etc.).
+
+<figure class="image">
+    <img src="{{ "/assets/img/fig2.png" | absolute_url }}"
+         alt="Figure 1"
+         width="700">
+    <figcaption>
+        Figure 1: Cell state identification through unidimensional gating
     </figcaption>
 </figure>
 
