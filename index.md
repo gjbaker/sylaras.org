@@ -31,7 +31,7 @@ active: home
 The key publication for SYLARAS is Baker et al. (2018), *Sytemic Lymphoid Architecture Response Assessment (SYLARAS): A Computational Tool for Discovery-based Immunophenotyping*.
 
 * [Read the manuscript](https://doi.org/10.1101/151738)
-* [Access supporting data and software code](https://github.com/gjbaker/gbm_immunosuppression/tree/dev)
+* [Access supporting data and software code](https:)
 * [Learn more and get training](training)
 * Please cite this resource as `(SYLARAS.org, RRID:SCR_016267)`
 
