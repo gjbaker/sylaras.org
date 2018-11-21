@@ -1,8 +1,12 @@
 ---
 ---
-// @import "{{ site.theme }}";
-// @import "fonts";
-// @import "theme_customizations";
 @import "bootstrap/scss/functions";
 @import "variables";
 @import "bootstrap/scss/bootstrap";
+
+// $font-family-sans-serif:      'Montserrat-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+body {
+  letter-spacing: -0.06rem
+}

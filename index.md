@@ -1,8 +1,16 @@
 ---
 active: home
+title: title of home page
 ---
+<!-- <h1>
+{{ page.title }}
+</h1>
 
-<p class="sidebar-cta">
+<h2>
+{{ site.title }}
+</h2> -->
+
+<!-- <p class="sidebar-cta">
     <a href="http://pca2018.s3-website-us-east-1.amazonaws.com/">
         View the dynamic melanoma patient sample browser!
 
@@ -10,9 +18,7 @@ active: home
              src="{{ "/assets/img/cta_button.png" | absolute_url }}"
              alt="Browse">
     </a>
-</p>
-
-## SYLARAS
+</p> -->
 
 <figure class="image">
     <img src="{{ "/assets/img/fig0.png" | absolute_url }}"
@@ -22,23 +28,29 @@ active: home
 
 ### SYLARAS is...
 
-* Agnostic to the platform for single-cell data acquisition (e.g. flow cytometry, mass cytometry, image-based cytometry methods).
-* Modular and extensible experimental and computational workflows.
-* Uses conventional wide-field, confocal and super-resolution microscopes.
-* Antibodies can be selected based on the requirements of the project: no
-  proprietary or unusual reagents required.
+* A modular and extensible computational single-cell analysis workflow.
+* Agnostic to the platform of data acquisition.
 
 The key publication for SYLARAS is Baker et al. (2018), *Sytemic Lymphoid Architecture Response Assessment (SYLARAS): A Computational Tool for Discovery-based Immunophenotyping*.
 
 * [Read the manuscript](https://doi.org/10.1101/151738)
-* [Access supporting data and software code](https:)
+* [Access software code](https://github.com/gjbaker/sylaras.org)
 * [Learn more and get training](training)
-* Please cite this resource as `(SYLARAS.org, RRID:SCR_016267)`
+* Please cite this resource as `(Baker et al. (2018))`
 
-SYLARAS is a computational tool for the comprehensive statistical analysis and concise visualization of single-cell data at scale study of immunologic response. A data-analytical framework written the in the Python programming language and run at the command-line of a personal computer, SYLARAS transforms single-cell data at scale into a comprehensive and concise visual compendium of the time and tissue-dependent changes occurring in the systemic cellular immune system in response to experimental immune perturbation.
+## About
+SYLARAS is a set of complementary experimental and computational workflows for screening
+the time and tissue-dependent changes occurring in systemic cellular immune composition
+in response to experimental perturbation. SYLARAS uses immunophenotyping as a means to
+infer cell populations differentially influenced by a given immune stimulus through the
+quantification of changes in their frequency. Written in the open-source Python programming
+language, the data-analytical framework is modular and extensible, and run at the
+command-line of a personal computer. SYLARAS transforms multi-dimensional, quantitative
+single-cell data no matter the method of its acquisition into a comprehensive and concise
+visual compendium of the time and tissue-dependent changes occurring in the systemic
+cellular immune composition in response to experimental perturbation. Immune cells migrate, differentiate, and proliferate in response to mitogenic and antigenic stimuli. Although the mechanisms underlying these changes are not always clear, the resultant redistribution in the frequency of immune cells that constitute specific lymphoid tissues is readily detected and quantified by immunophenotyping: a technique for measuring the proportions of phenotypically distinct immune cell populations based on differential antigen expression.
 
-
-<div class="embed-container">
+<!-- <div class="embed-container">
     <iframe src="https://player.vimeo.com/video/269885646"
      frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
@@ -46,12 +58,11 @@ SYLARAS is a computational tool for the comprehensive statistical analysis and c
 <div class="embed-container">
     <iframe src="https://player.vimeo.com/video/270692465"
      frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-
+</div> -->
 
 ### Innovation
 
-Contemporary instruments for flow and mass cytometry allow for the rapid collection of large experimental datasets pertinent to the study of cancer immunology. However, their manual analysis through graphical user interface (GUI) software programs is prohibited by their size and multiplexity. As a postdoctoral fellow in Dr. Sorger’s lab, I have worked to address the disparity between the acquisition and analysis of single-data by developing a complementary set of experimental and computational workflows relevant to the longitudinal, multi-tissue assessment of cellular immune composition in response to immunologic perturbation (Fig. 1). The technology, referred to as Systemic Lymphoid Architecture Response Assessment (SYLARAS), uses immunophenotyping as a means to infer cell states differentially influenced by a given immune stimulus through the detection and quantification of changes in cell frequency.
+Contemporary instruments for flow and mass cytometry allow for the rapid collection of large experimental datasets pertinent to the study of cancer immunology. However, the need for complex gating strategies and comprehensive statistical analysis through graphical user interface (GUI) software programs is prohibited by their size and multiplexity. SYLARAS addresses the disparity between the acquisition and analysis of single-data by developing a complementary set of experimental and computational workflows relevant to the longitudinal, multi-tissue assessment of cellular immune composition in response to immunologic perturbation (Fig. 1).
 
 ### The SYLARAS Workflow
 
@@ -80,12 +91,12 @@ Once curated, the gate values are input into the SYLARAS algorithm for programma
     </figcaption>
 </figure>
 
-<div class="embed-container">
+<!-- <div class="embed-container">
     <iframe src="https://player.vimeo.com/video/269904895"
      frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
+</div> -->
 
-### Imaging
+### Dashboards
 
 Imaging of t-CyCIF specimens can be performed on a variety of fluorescent
 microscopes each of which represent a different tradeoff between data
@@ -95,11 +106,20 @@ scanners, but high resolution image is obtained using confocal or structured
 illumination microscopes.
 
 <figure class="image">
-    <img src="{{ "/assets/img/figure2.jpg" | absolute_url }}"
+    <img src="{{ "/assets/img/PMN_dashboard.png" | absolute_url }}"
          alt="Figure 2"
-         width="500">
+         width="600">
     <figcaption>
-        Figure 2: t-CyCIF of a metastatic melanoma at different resolutions
+        Example dashboard: One of 30 cell type specific SYLARAS dashboards programmatically generated during the initial screen of the GL261 GBM model. (1) immunophenotype alias (2) lineage (3) expressed immunomarkers (4) forward and side scatter distributions (5) Logicle-transformed signal intensity distributions of 11 immunomarkers (6 and 7) Tissue and time point-specific average percent difference (left) and log2 fold-change (right) between GBM-burdened and control mice (n=8 mice/group/tissue/time point). Icons indicate under what conditions and to what extent statistical significance was achieved. (8) The immunophenotype’s tissue distribution across 5 lymphoid organs color-coded as in number 6, (9) Percentage of the full dataset accounted for by the immunophenotype (10) Replicate data across the study’s 48 mice showing the percentage of each tissue accounted for by the immunophenotype.
+    </figcaption>
+</figure>
+
+<figure class="image">
+    <img src="{{ "/assets/img/dashboards.png" | absolute_url }}"
+         alt="Figure 2"
+         width="1200">
+    <figcaption>
+        SYLARAS dashboards: This set of 30 programmatically-generated graphical dashboards (1 per cell state) serves as a comprehensive visual compendium of tumor-induced changes in mouse systemic cellular immune composition in response to the GL261 mouse GBM model.
     </figcaption>
 </figure>
 

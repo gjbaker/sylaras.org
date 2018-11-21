@@ -1,4 +1,4 @@
-<nav class="main-nav">
+<!-- <nav class="main-nav">
   <ul>
     <li><a href="/" {% if page.active == 'home' %}class='active'{% endif %}>Home</a></li>
     <li><a href="/training" {% if page.active == 'training' %}class='active'{% endif %}>Training</a></li>
@@ -6,4 +6,19 @@
     <li><a href="/example2" {% if page.active == 'example2' %}class='active'{% endif %}>Example 2</a></li>
     <li><a href="/osd1" {% if page.active == 'osd1' %}class='active'{% endif %}>OSD 1</a></li>
   </ul>
+</nav> -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link {% if page.active == 'home' %}active{% endif %}" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Tour</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+    </div>
+  </div>
 </nav>

@@ -1,6 +1,7 @@
 theme: jekyll-theme-hacker
-title: Systemic Lymphoid Architecture Response Assessment (SYLARAS)
-description: Supervised exploration and tidy visual display of discovery-based immunophenotyping data
+title: Systemicll Lymphoid Architecture Response Assessment (SYLARAS)
+description: Supervised exploration and tidy display of discovery-based immunophenotyping data
+featured-img: /assets/img/fig0.png
 
 sass:
     load_paths:
