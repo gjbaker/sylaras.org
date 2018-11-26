@@ -28,8 +28,9 @@ title: title of home page
 
 ### SYLARAS is...
 
-* A modular and extensible computational single-cell analysis workflow.
-* Agnostic to the platform of data acquisition.
+* a modular and extensible computational single-cell analysis workflow run at
+the command line of a personal computer
+* agnostic to the data acquisition platform
 
 The key publication for SYLARAS is Baker et al. (2018), *Sytemic Lymphoid Architecture Response Assessment (SYLARAS): A Computational Tool for Discovery-based Immunophenotyping*.
 
@@ -98,13 +99,6 @@ Once curated, the gate values are input into the SYLARAS algorithm for programma
 
 ### Dashboards
 
-Imaging of t-CyCIF specimens can be performed on a variety of fluorescent
-microscopes each of which represent a different tradeoff between data
-acquisition time, image resolution and sensitivity (Figure 2). Specimens several
-square centimeters in area are often examined at a resolution of ~1 µm on slide
-scanners, but high resolution image is obtained using confocal or structured
-illumination microscopes.
-
 <figure class="image">
     <img src="{{ "/assets/img/PMN_dashboard.png" | absolute_url }}"
          alt="Figure 2"
@@ -114,14 +108,14 @@ illumination microscopes.
     </figcaption>
 </figure>
 
-<figure class="image">
+<!-- <figure class="image">
     <img src="{{ "/assets/img/dashboards.png" | absolute_url }}"
          alt="Figure 2"
          width="1200">
     <figcaption>
         SYLARAS dashboards: This set of 30 programmatically-generated graphical dashboards (1 per cell state) serves as a comprehensive visual compendium of tumor-induced changes in mouse systemic cellular immune composition in response to the GL261 mouse GBM model.
     </figcaption>
-</figure>
+</figure> -->
 
 ### Antibodies for tissue-based CyCIF
 
@@ -147,7 +141,7 @@ staining by t-CyCIF and what has previously been reported for IHC staining
 different antibodies in different channels; this enables pixel-level comparison
 of the same cells (Figure 4).
 
-<figure class="image">
+<!-- <figure class="image">
     <img src="{{ "/assets/img/figure3.jpg" | absolute_url }}"
          alt="Figure 3"
          width="800">
@@ -168,7 +162,7 @@ of the same cells (Figure 4).
     scored on a pixel-by-pixel basis as determined from a single section of
     human tonsil. Antibody 2 performs poorly in this comparison.
   </figcaption>
-</figure>
+</figure> -->
 
 Efforts to date do not constitute a sufficient level of testing or validation
 for clinical studies and patterns of staining described in this site or in our
