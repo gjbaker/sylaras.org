@@ -1,23 +1,16 @@
-<!-- <nav class="main-nav">
-  <ul>
-    <li><a href="/" {% if page.active == 'home' %}class='active'{% endif %}>Home</a></li>
-    <li><a href="/training" {% if page.active == 'training' %}class='active'{% endif %}>Training</a></li>
-    <li><a href="/example1" {% if page.active == 'example1' %}class='active'{% endif %}>Example 1</a></li>
-    <li><a href="/example2" {% if page.active == 'example2' %}class='active'{% endif %}>Example 2</a></li>
-    <li><a href="/osd1" {% if page.active == 'osd1' %}class='active'{% endif %}>OSD 1</a></li>
-  </ul>
-</nav> -->
-
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+
+  <a class="navbar-brand" href="#">
+    <!-- <img src="{{ "/assets/img/fig0.png" | absolute_url }}" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    Navagation
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link {% if page.active == 'home' %}active{% endif %}" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Tour</a>
+      <a class="nav-item nav-link {% if page.active == 'home' %}active{% endif %}" href="index">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link {% if page.active == 'tour' %}active{% endif %}" href="tour">Tour</a>
       <a class="nav-item nav-link" href="#">Citation</a>
     </div>
   </div>

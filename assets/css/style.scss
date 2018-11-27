@@ -8,5 +8,22 @@
 
 
 body {
-  letter-spacing: -0.06rem
+  letter-spacing: -0.06rem;
+}
+
+header {
+  h1 {
+    font-size: 1.65rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+#home{
+  h3{
+    border-left: salmon solid 5px;
+    padding: 1rem;
+  }
 }

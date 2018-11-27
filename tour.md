@@ -1,8 +1,8 @@
 ---
-active: training
+active: tour
 ---
 
-## Training
+## Tour
 
 NCI-funded Cancer System Biology Centers (CSBC centers) at Harvard Medical
 School and Oregon Health & Science University are collaborating to make it

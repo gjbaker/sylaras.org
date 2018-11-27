@@ -13,8 +13,17 @@
 
     <header>
       <div class="container">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <div class="d-flex flex-row align-items-top">
+          <img src="{{ "/assets/img/fig0.png" | absolute_url }}"
+                 alt="Figure 1"
+                 width="175">
+          <div class="pl-3">
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+          </div>
+        </div>
+
+
 
         {% include nav.html %}
 

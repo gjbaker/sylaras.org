@@ -20,16 +20,11 @@ title: title of home page
     </a>
 </p> -->
 
-<figure class="image">
-    <img src="{{ "/assets/img/fig0.png" | absolute_url }}"
-         alt="Figure 1"
-         width="300">
-</figure>
 
 ### SYLARAS is...
 
-* a modular and extensible computational single-cell analysis workflow run at
-the command line of a personal computer
+* a modular and extensible computational workflow for single-cell
+analysis run at the command line of a personal computer
 * agnostic to the data acquisition platform
 
 The key publication for SYLARAS is Baker et al. (2018), *Sytemic Lymphoid Architecture Response Assessment (SYLARAS): A Computational Tool for Discovery-based Immunophenotyping*.
@@ -39,7 +34,7 @@ The key publication for SYLARAS is Baker et al. (2018), *Sytemic Lymphoid Archit
 * [Learn more and get training](training)
 * Please cite this resource as `(Baker et al. (2018))`
 
-## About
+### About
 SYLARAS is a set of complementary experimental and computational workflows for screening
 the time and tissue-dependent changes occurring in systemic cellular immune composition
 in response to experimental perturbation. SYLARAS uses immunophenotyping as a means to
@@ -73,7 +68,8 @@ In SYLARAS, (1) an immune perturbagen (glioblastoma cancer cells in this case) i
 <figure class="image">
     <img src="{{ "/assets/img/fig1.png" | absolute_url }}"
          alt="Figure 1"
-         width="700">
+         width="700"
+         class="img-fluid">
     <figcaption>
         Figure 1: The SYLARAS workflow for discovery-based immunophenotyping
     </figcaption>
@@ -87,7 +83,8 @@ Once curated, the gate values are input into the SYLARAS algorithm for programma
 <figure class="image">
     <img src="{{ "/assets/img/fig2.png" | absolute_url }}"
          alt="Figure 1"
-         width="700">
+         width="700"
+         class="img-fluid">
     <figcaption>
         Figure 1: Cell state identification through unidimensional gating
     </figcaption>
@@ -103,7 +100,8 @@ Once curated, the gate values are input into the SYLARAS algorithm for programma
 <figure class="image">
     <img src="{{ "/assets/img/PMN_dashboard.png" | absolute_url }}"
          alt="Figure 2"
-         width="600">
+         width="600"
+         class="img-fluid">
     <figcaption>
         Example dashboard: One of 30 cell type specific SYLARAS dashboards programmatically generated during the initial screen of the GL261 GBM model. (1) immunophenotype alias (2) lineage (3) expressed immunomarkers (4) forward and side scatter distributions (5) Logicle-transformed signal intensity distributions of 11 immunomarkers (6 and 7) Tissue and time point-specific average percent difference (left) and log2 fold-change (right) between GBM-burdened and control mice (n=8 mice/group/tissue/time point). Icons indicate under what conditions and to what extent statistical significance was achieved. (8) The immunophenotype’s tissue distribution across 5 lymphoid organs color-coded as in number 6, (9) Percentage of the full dataset accounted for by the immunophenotype (10) Replicate data across the study’s 48 mice showing the percentage of each tissue accounted for by the immunophenotype.
     </figcaption>
