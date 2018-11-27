@@ -23,7 +23,7 @@ title: title of home page
 <figure class="image">
     <img src="{{ "/assets/img/fig0.png" | absolute_url }}"
          alt="Figure 1"
-         width="500">
+         width="300">
 </figure>
 
 ### SYLARAS is...
@@ -35,7 +35,7 @@ the command line of a personal computer
 The key publication for SYLARAS is Baker et al. (2018), *Sytemic Lymphoid Architecture Response Assessment (SYLARAS): A Computational Tool for Discovery-based Immunophenotyping*.
 
 * [Read the manuscript](https://doi.org/10.1101/151738)
-* [Access software code](https://github.com/gjbaker/sylaras.org)
+* [Access source code](https://github.com/gjbaker/sylaras.org)
 * [Learn more and get training](training)
 * Please cite this resource as `(Baker et al. (2018))`
 
@@ -63,11 +63,12 @@ cellular immune composition in response to experimental perturbation. Immune cel
 
 ### Innovation
 
-Contemporary instruments for flow and mass cytometry allow for the rapid collection of large experimental datasets pertinent to the study of cancer immunology. However, the need for complex gating strategies and comprehensive statistical analysis through graphical user interface (GUI) software programs is prohibited by their size and multiplexity. SYLARAS addresses the disparity between the acquisition and analysis of single-data by developing a complementary set of experimental and computational workflows relevant to the longitudinal, multi-tissue assessment of cellular immune composition in response to immunologic perturbation (Fig. 1).
+Contemporary instruments for flow and mass cytometry allow for the rapid collection of large experimental datasets pertinent to the study of cancer immunology. However, the need for complex gating strategies and comprehensive statistical analysis through graphical user interface (GUI) software programs is prohibited by their size and multiplexity. SYLARAS addresses the disparity between the acquisition and analysis of single-data by developing a complementary set of experimental and computational workflows relevant to the longitudinal, multi-tissue assessment of cellular immune composition in response to immunologic perturbation (Fig. 1). Source code can be found
+at [our GitHub repository](https://github.com/gjbaker/sylaras.org)
 
 ### The SYLARAS Workflow
 
-In SYLARAS, (1) an immune perturbagen (glioblastoma cancer cells in this case) is administered to a cohort of mice; a cohort of age-matched control mice receive vehicle only. (2) Various lymphoid tissues are harvested at fixed time points after perturbagen administration. (3) Tissues are processed into single-cell suspensions and plated in a 96 well V-bottom plate. (4) Cells are immunolabeled with an optimized multicolor immunofluorescence panel (OMIP) consisting of 11 fluorophore-conjugated antibodies targeting various cell surface antigens and stained with a fixable viability dye (FVD). (5) Single-cell data are acquired in a high-throughput manner by flow cytometry. (6) Raw data files are spectrally deconvolved and gated for viable singlets using conventional approaches. (7) The cleaned data undergo bias curation (see figure 2 below) and are computationally analyzed by the SYLARAS algorithm. workflow for discovery-based immunophenotyping
+In SYLARAS, (1) an immune perturbagen (glioblastoma cancer cells in this case) is administered to a cohort of mice; a cohort of age-matched control mice receive vehicle only. (2) Various lymphoid tissues are harvested at fixed time points after perturbagen administration. (3) Tissues are processed into single-cell suspensions and plated in a 96 well V-bottom plate. (4) Cells are immunolabeled with an optimized multicolor immunofluorescence panel (OMIP) consisting of 11 fluorophore-conjugated antibodies targeting various cell surface antigens and stained with a fixable viability dye (FVD). (5) Single-cell data are acquired in a high-throughput manner by flow cytometry. (6) Raw data files are spectrally deconvolved and gated for viable singlets using conventional approaches. (7) The cleaned data undergo bias curation (see figure 2 below) and are computationally analyzed by the SYLARAS algorithm. workflow for discovery-based immunophenotyping. Click [here]({{ "/assets/data/materials_and_methods copy.docx" | absolute_url }}) for SYLARAS Materials and Methods.
 
 <figure class="image">
     <img src="{{ "/assets/img/fig1.png" | absolute_url }}"
@@ -117,29 +118,6 @@ Once curated, the gate values are input into the SYLARAS algorithm for programma
     </figcaption>
 </figure> -->
 
-### Antibodies for tissue-based CyCIF
-
-In the first cycle of t-CyCIF is possible to use indirect immunofluorescence and
-secondary antibodies. In all other cycles antibodies are directly conjugated to
-fluorophores, typically Alexa 488, 555 or 647. As an alternative to chemical
-coupling we have tested the Zenon™ antibody labelling method from ThermoFisher
-in which isotype-specific Fab fragments pre-labelled with fluorophores are bound
-to primary antibodies to create immune complexes; the immune complexes are then
-incubated with tissue samples. This method is effective with some but not all
-primary antibodies.
-
-To date, we have tested commercial antibodies against ~200 proteins for their
-compatibility with t-CyCIF. These antibodies include lineage makers,
-cytoskeletal proteins, cell cycle regulators, the phosphorylated forms of
-signaling proteins and kinases, transcription factors, markers of cell state
-including quiescence, senescence, apoptosis, stress, etc.
-(see [Table 1]({{ "/assets/data/CyCIF-Tested-Antibodies-May2018.xlsx" | absolute_url }})). Currently we rely
-exclusively on commercial antibodies that have previously been validated using
-immuno-histochemistry (IHC) or conventional immunofluorescence. We compare
-staining by t-CyCIF and what has previously been reported for IHC staining
-(Figure 3) We also compare directly antibodies against the same antigen by using
-different antibodies in different channels; this enables pixel-level comparison
-of the same cells (Figure 4).
 
 <!-- <figure class="image">
     <img src="{{ "/assets/img/figure3.jpg" | absolute_url }}"
@@ -164,43 +142,10 @@ of the same cells (Figure 4).
   </figcaption>
 </figure> -->
 
-Efforts to date do not constitute a sufficient level of testing or validation
-for clinical studies and patterns of staining described in this site or in our
-publications should therefore be considered illustrative of the t-CyCIF approach
-rather than definitive descriptions. We are currently assembling an OMERO
-(https://www.openmicroscopy.org/omero/) database of matched t-CyCIF and IHC
-images across multiple tissues and knockdown cell lines to further advance
-antibody validation. This date will be available near the end of 2018.
-
-### Image processing and data analysis
-
-Image processing and data analysis are demanding in the case of high-plex tissue
-images; we use software tools developed by others supplemented by a growing
-number of specialized methods (code can be found
-at [our GitHub repository](https://github.com/sorgerlab/cycif/). Once cells are
-segmented and turned into intensity information, tools such as t-SNE can be used
-in much the same way as with mass cytometry and other high-dimensional data
-(Figure 5).
-
-<figure class="image">
-    <img src="{{ "/assets/img/figure5.jpg" | absolute_url }}"
-         alt="Figure 5"
-         width="800">
-    <figcaption>
-        Figure 5: t-CyCIF of human small intestine with analysis
-    </figcaption>
-</figure>
-
-### Human subjects disclaimer
-
-Human specimens were retrieved from the archives of the Brigham and Women’s
-Hospital under a discarded/excess tissue protocol as detailed in Institutional
-Review Board (IRB) protocol IRB17-1688 (2018) for research deemed to “involve no
-more than minimal risk to the subjects.”
 
 ### Funding
 
-This work was made possible by American Cancer Society Postdoctoral Fellowship award PF-16-197-01-LIB awarded to Gregory J. Baker together with the support of the Ludwig Center at Harvard Medical School.
+This work was made possible by an American Cancer Society Postdoctoral Fellowship awarded to Gregory J. Baker (PF-16-197-01-LIB), a National Institutes of Health P50 grant awarded to Peter K. Sorger (GM107618), and a National Cancer Institute U54 multicenter grant to Peter K. Sorger (CA225088).
 
 ### Publications
 
@@ -215,16 +160,3 @@ This work was made possible by American Cancer Society Postdoctoral Fellowship a
 1. Lin J-R, Fallahi-Sichani M, Sorger PK. Highly multiplexed imaging of single
    cells using a high-throughput cyclic immunofluorescence method. Nat Commun.
    2015 Sep 24;6:8390. PMCID: PMC4587398
-
-1. Lin J-R, Fallahi-Sichani M, Chen J-Y, Sorger PK. Cyclic Immunofluorescence
-   (CyCIF), A Highly Multiplexed Method for Single-cell Imaging. Curr Protoc
-   Chem Biol. 2016 Dec 7;8(4):251-264. PMCID: PMC5233430
-
-1. Lin J-R, Izar B, Mei S, Wang S, Shah P, Sorger P. A simple open-source method
-   for highly multiplexed imaging of single cells in tissues and tumours.
-   bioRxiv. 2017 Jun 19;151738.
-
-1. Coy S, Rashid R, Lin J-R, Du Z, Donson AM, Hankinson TC, Foreman NK, Manley
-   PE, Kieran MW, Reardon DA, Sorger PK, Santagata S. Multiplexed
-   Immunofluorescence Reveals Potential PD-1/PD-L1 Pathway Vulnerabilities in
-   Craniopharyngioma. Neuro-Oncol. 2018 Mar 2; PMID: 29509940
