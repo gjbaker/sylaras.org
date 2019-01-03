@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -121,14 +121,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 								<span class="heading-meta">Welcome to SYLARAS</span>
 
 
-							     
+
 
 					<h2> About</h2>
 
 					<p>SYLARAS is a set of complementary experimental and computational workflows for screening the time and tissue-dependent changes occurring in systemic cellular immune composition in response to experimental perturbation. SYLARAS uses immunophenotyping as a means to infer cell populations differentially influenced by a given immune stimulus through the quantification of changes in their frequency. Written in the open-source Python programming language, the data-analytical framework is modular and extensible, and run at the command-line of a personal computer. SYLARAS transforms multi-dimensional, quantitative single-cell data no matter the method of its acquisition into a comprehensive and concise visual compendium of the time and tissue-dependent changes occurring in the systemic cellular immune composition in response to experimental perturbation. Immune cells migrate, differentiate, and proliferate in response to mitogenic and antigenic stimuli. Although the mechanisms underlying these changes are not always clear, the resultant redistribution in the frequency of immune cells that constitute specific lymphoid tissues is readily detected and quantified by immunophenotyping: a technique for measuring the proportions of phenotypically distinct immune cell populations based on differential antigen expression.</p>
 
 
-					<font size="2.5"><p><b>SYLARUS </b> is modular and extensible computational workflow for single-cell analysis run at the command line of a personal computer
+					<font size="2.5"><p><b>SYLARAS </b> is modular and extensible computational workflow for single-cell analysis run at the command line of a personal computer
 							    agnostic to the data acquisition platform <br></p>
 
 								<p>The key publication for SYLARAS is <strong>Baker et al. (2018), Sytemic Lymphoid Architecture Response Assessment (SYLARAS): A Computational Tool for Discovery-based Immunophenotyping.</strong> </p></font>
@@ -170,7 +170,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 					</div>
 
 					<h5> Please cite this resource as (Baker et al. (2018))</h5>
-		
+
 							</div>
 							<div class="fancy-collapse-panel">
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -213,7 +213,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									    </div>
 									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 									        <div class="panel-body">
-									            <p>The SYLARAS computational algorithm consists of an open-source data-analytical framework written in the Python programming language and executed on the command-line. The algorithm sidesteps the requirement for complex multidimensional gating strategies in the identification of immunophenotypically-distinct cell states by asking the investigator to perform a simplified unidimensional gating procedure prior to programmatically analyzing the data (Fig. 2). The goal of this procedure is to distinguish between experimental background and on-target antibody labeling for each immunomarker and is expedited by formatting the study’s histograms (per sample per immunomarker) as a scrolling HTML table viewable with a web browser. The signal intensity distribution of unlabeled or isotype-labeled control cells is superimposed on each histogram as a fiducial guide to aid in the selection of an appropriate gate by revealing how signal intensities associated with autofluorescence/off-target antibody binding compare to experimental signal intensity distributions (Fig. 2a-c). Once curated, the gate values are input into the SYLARAS algorithm for programmatic subtraction from the signal intensity values of their corresponding histograms. This causes the gate to become the zero point and background signal intensities to become negative (Fig. 2d). Since immunomarker signals are now binarized according to mathematical sign, the algorithm bins cells in the dataset among 2M orthants of an M-dimensional hypercube, where M is the number of immunomarkers and each orthant represents a unique immunophenotype (e.g. CDx+, CDy-, CDz+…) (Fig. 2e). This allows thousands of immunophenotypes to be identified without the non-commutativity and labor-intensity of manual gating in multiple dimensions. SYLARAS then computes statistics on immunophenotypes of interest and displays the results on each as an information-dense graphical dashboard (Fig. 3). A set of SYLARAS dashboards serves as a concise and comprehensive compendium of the time and tissue-dependent changes occurring in the systemic cellular immune system in response to a given immune perturbagen (e.g. cancer, viruses, bacteria, autoimmunity model, vaccination, immunotherapy, etc.).</p>	
+									            <p>The SYLARAS computational algorithm consists of an open-source data-analytical framework written in the Python programming language and executed on the command-line. The algorithm sidesteps the requirement for complex multidimensional gating strategies in the identification of immunophenotypically-distinct cell states by asking the investigator to perform a simplified unidimensional gating procedure prior to programmatically analyzing the data (Fig. 2). The goal of this procedure is to distinguish between experimental background and on-target antibody labeling for each immunomarker and is expedited by formatting the study’s histograms (per sample per immunomarker) as a scrolling HTML table viewable with a web browser. The signal intensity distribution of unlabeled or isotype-labeled control cells is superimposed on each histogram as a fiducial guide to aid in the selection of an appropriate gate by revealing how signal intensities associated with autofluorescence/off-target antibody binding compare to experimental signal intensity distributions (Fig. 2a-c). Once curated, the gate values are input into the SYLARAS algorithm for programmatic subtraction from the signal intensity values of their corresponding histograms. This causes the gate to become the zero point and background signal intensities to become negative (Fig. 2d). Since immunomarker signals are now binarized according to mathematical sign, the algorithm bins cells in the dataset among 2M orthants of an M-dimensional hypercube, where M is the number of immunomarkers and each orthant represents a unique immunophenotype (e.g. CDx+, CDy-, CDz+…) (Fig. 2e). This allows thousands of immunophenotypes to be identified without the non-commutativity and labor-intensity of manual gating in multiple dimensions. SYLARAS then computes statistics on immunophenotypes of interest and displays the results on each as an information-dense graphical dashboard (Fig. 3). A set of SYLARAS dashboards serves as a concise and comprehensive compendium of the time and tissue-dependent changes occurring in the systemic cellular immune system in response to a given immune perturbagen (e.g. cancer, viruses, bacteria, autoimmunity model, vaccination, immunotherapy, etc.).</p>
 									        </div>
 									    </div>
 									</div>
@@ -227,7 +227,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									    </div>
 									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 									        <div class="panel-body">
-									            <p>Example dashboard: One of 30 cell type specific SYLARAS dashboards programmatically generated during the initial screen of the GL261 GBM model. (1) immunophenotype alias (2) lineage (3) expressed immunomarkers (4) forward and side scatter distributions (5) Logicle-transformed signal intensity distributions of 11 immunomarkers (6 and 7) Tissue and time point-specific average percent difference (left) and log2 fold-change (right) between GBM-burdened and control mice (n=8 mice/group/tissue/time point). Icons indicate under what conditions and to what extent statistical significance was achieved. (8) The immunophenotype’s tissue distribution across 5 lymphoid organs color-coded as in number 6, (9) Percentage of the full dataset accounted for by the immunophenotype (10) Replicate data across the study’s 48 mice showing the percentage of each tissue accounted for by the immunophenotype. </p>	
+									            <p>Example dashboard: One of 30 cell type specific SYLARAS dashboards programmatically generated during the initial screen of the GL261 GBM model. (1) immunophenotype alias (2) lineage (3) expressed immunomarkers (4) forward and side scatter distributions (5) Logicle-transformed signal intensity distributions of 11 immunomarkers (6 and 7) Tissue and time point-specific average percent difference (left) and log2 fold-change (right) between GBM-burdened and control mice (n=8 mice/group/tissue/time point). Icons indicate under what conditions and to what extent statistical significance was achieved. (8) The immunophenotype’s tissue distribution across 5 lymphoid organs color-coded as in number 6, (9) Percentage of the full dataset accounted for by the immunophenotype (10) Replicate data across the study’s 48 mice showing the percentage of each tissue accounted for by the immunophenotype. </p>
 									        </div>
 									    </div>
 									</div>
@@ -255,11 +255,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 							<p class="colorlib-lead">Gregory J. Baker, P.S. Thiagarajan, Sucheendra K. Palaniappan, Stephanie H. Davis, Jodene K. Moore and Peter K. Sorger. A flow-based immunoprofiling strategy for interrogating system-wide leukocyte composition in response to glioblastoma; Cancer Res July 1 2017 (77) (13 Supplement) 1678; DOI: 10.1158/1538-7445.AM2017-1678</p>
 
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
-			
+
 
 			<div id="get-in-touch" class="colorlib-bg-color">
 				<div class="colorlib-narrow-content">
@@ -273,7 +273,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 							<p class="colorlib-lead">This work was made possible by an American Cancer Society Postdoctoral Fellowship awarded to Gregory J. Baker (PF-16-197-01-LIB), a National Institutes of Health P50 grant awarded to Peter K. Sorger (GM107618), and a National Cancer Institute U54 multicenter grant to Peter K. Sorger (CA225088).</p>
 							<p><a href="#" class="btn btn-primary btn-learn">Contact us!</a></p>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
@@ -292,11 +292,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Sticky Kit -->
 	<script src="js/sticky-kit.min.js"></script>
-	
-	
+
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
 	</body>
 </html>
-
