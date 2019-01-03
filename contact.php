@@ -1,4 +1,20 @@
-<!DOCTYPE HTML>
+<?php
+
+if($_POST["Submit"]) {
+    $recipient="gregory_baker2@hms.harvard.edu";
+    $subject="SYLARAS inquiry";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["subject"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$subject";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?><!DOCTYPE HTML>
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -53,13 +69,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 			<aside id="colorlib-hero" class="js-fullheight">
 				<div class="flexslider js-fullheight">
 					<div class="container">
-				 <form action="action_page.php">
 
-					 <label for="fname">First Name</label>
-					 <input type="text" id="fname" name="firstname" placeholder="">
+         <?=$thankYou ?>
 
-					 <label for="lname">Last Name</label>
-					 <input type="text" id="lname" name="lastname" placeholder="">
+				 <form method="post" action="contact.php">
+
+					 <label for="fname">Full Name</label>
+					 <input type="text" id="fname" name="sender" placeholder="">
 
 					 <label for="email">Email</label>
 					 <input type="text" id="email" name="senderEmail" placeholder="">
