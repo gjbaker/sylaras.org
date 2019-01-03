@@ -1,3 +1,11 @@
+<?php
+if($_POST["message"]) {
+    mail("gregory_baker2@hms.harvard.edu",
+		"SYLARAS inquiry", $_POST["subject"],
+		"From: inquiry@sylaras.org");
+}
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
