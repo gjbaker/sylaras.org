@@ -40,12 +40,14 @@
 			<h5 align="right">A platform for discovery-based immunophenotyping</h5>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li class="colorlib-active"><a href="index.html">Home</a></li>
-					<li><a href="#intro">About</a></li>
-					<li><a href="#details">Details</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#intro">Overview</a></li>
+					<li><a href="#details">Theory</a></li>
 					<li><a href="#publications">Publications</a></li>
 					<li><a href="#funding">Funding</a></li>
+					<li><a href="#funding">License</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<!-- class="colorlib-active" -->
 				</ul>
 			</nav>
 
@@ -83,7 +85,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 					   				<div class="slider-text-inner">
 					   					<div class="desc">
 						   					<h1>Comprehensive immunophenotype screening </h1>
-						   					<h2>Streamlined unidimensional gating.</h2>
+						   					<h2>Streamlined through unidimensional gating.</h2>
 											</div>
 					   				</div>
 					   			</div>
@@ -114,32 +116,29 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 							<div class="about-desc">
-								<span class="heading-meta">Welcome to the SYLARAS project</span>
+								<span class="heading-meta">What is SYLARAS?</span>
 
 
 
 
 					<!-- <h2> About</h2> -->
 
-					<p>SYLARAS is is a modular and extensible experimental framework for the acquisition,
-						statistical analysis, and tidy graphical display of systemic immunophenotyping
-						data which faciliates discovery of network-level immune architectures and cell-based
-						mechanisms of disease and its response to therapy. The technology consists of (i) a flow
-						cytometry antibody panel optimized for coarse-gained immunophenotyping of a broad range
-						of lineage committed mouse immune cells, (ii) a detailed experimental protocol tissue processing
-						and high-throughput data acquisition, and (iii) an open-source computational tool run at the
-						command-line of a personal computer that transforms quantitative single-cell data into a
-						concise visual compendium of the time and tissue-dependent changes occurring in systemic
-						lymphoid tissue architecture in response to a any given experimental immune perturbagen.</p>
+					<p>SYLARAS is is a modular and extensible framework for the acquisition,
+						statistical analysis, and tidy graphical display of systems-level immunophenotyping
+						data. It faciliates discovery of cell-based mechanisms of disease and therapeutic resposne
+						in preclinical immunology research by revealing the influence of an arbitrary
+						immunologic stimulus (e.g. infectious agent, cancer
+						model, autoimmune disease, etc.) on lymphoid tissue cellular architecture.</p>
 
-						<!-- The technological and conceptual advances instantiated in the SYLARAS approach
-						to discovery-based immunophenotyping are of broad utility to the immunology field,
-						as they faciliate investigation of the cell-based mechanisms under physiologic,
-						pathologic, and therapeutic conditions across a number of immunologically-relevant model systems
-						(e.g. infectious agent, cancer model, vaccine, immunotherapy, etc.). Source code for the SYLARAS
-						project was written in Python 3, is executed at the command-line of a personal computer, and is freely-available for
-						download along with the complete GBM dataset at www.sylaras.org.</p> -->
-
+						<p>The technology is comprised of three components. The first is a 12-color flow cytometry
+							antibody panel optimized adn validated for coarse-gained immunophenotyping of mouse
+							lineage committed immune cells. The second is a detailed experimental protocol descibing
+							the method of tissue collection, processing, and high-throughput immunophenotyping.
+							Third and final component is an open-source computational tool written in the Python programming
+							language and run at the command-line of a personal computer. The program algorithmically
+							transforms quantitative single-cell data into data-rich graphical dashboards (1 per immunophenotype)
+							that together serve as visual compendium of the time and tissue-dependent changes
+							occurring in systemic cellular immune composition in response to the given immune perturbagen.</p>
 
 					<!-- <font size="2.5"><p><b>SYLARAS </b> is a modular and extensible experimental framework for the acquisition, statistical analysis, and tidy display of discovery-based immunophenotyping data.
 							     <br></p> -->
@@ -166,8 +165,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 							<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
 								<a href="https://github.com/gjbaker/sylaras.org" class="colorlib-icon"><i class="icon-tag"></i></a>
 							<div class="colorlib-text">
-								<h3>Access source code</h3>
-								<p>Download the latest code and test datasets </p>
+								<h3>Access the source code</h3>
+								<p>Download the latest code, experimental protocols, and test datasets </p>
 							</div>
 						</div>
 					</div>
@@ -178,7 +177,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 								<a href="" class="colorlib-icon"><i class="icon-paperplane"></i></a>
 							<div class="colorlib-text">
 								<h3>Learn How</h3>
-								<p>Use the algorithm to analyze your own data!</p>
+								<p>Use the analysis tool to analyze your own data!</p>
 							</div>
 						</div>
 					</div>
@@ -203,13 +202,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									         <div class="panel-body">
 									            <div class="row">
 										      		<div class="col-md-12">
-										      			<p>Contemporary instruments for single-cell data acquisition, with
-																	their litany of commercially-available molecular probes, permit
-																	the rapid acquisition of single-cell data pertinent to the interrogation
-																	of systems-level immune architecture and its response to perturbation.
-																	However, the rigorous cell subset identification and statistical
-																	analysis needed to extract interpretable information from such datasets
-																	is impractical through point-and-click analysis programs.</p>
+										      			<p>Contemporary instruments and reagents for single-cell measurement permit
+																	the rapid acquisition of experimental datasets pertinent to the investigation
+																	of systems-level immune architectures and their response to experimental perturbation.
+																	However, the rigorous cell subset identification, statistical
+																	analysis, and graphical display needed to analyze and present these datasets
+																	in an interpretable format is impracticable through point-and-click
+																	analysis programs. SYLARAS uses computation to overcome these challenges by
+																	streamlining the process of comprehensive cell subset indentification, and automating
+																	the comparative statistical tests and visualization needed to generate an intelligible
+																	view of discovery-based immunophenotyping data spanning time, tissue,
+																	treatment, and biological replicate.</p>
 										      		</div>
 										      	</div>
 									         </div>
@@ -225,43 +228,48 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									    </div>
 									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 									        <div class="panel-body">
-									            <p>The immune response to mitogenic and antigenic stimuli is characterized
-																by cell migrating, proliferation, and differentiation which lead
+															<!-- <h5 <strong> Principle </strong>> -->
+															<h2> Overall Principle </h2>
+									            <p>Immunologic response to mitogenic and antigenic stimuli is characterized
+																by cell migration, proliferation, and differentiation. All of which lead
 																to compositional changes in a lymphoid tissue's cellular constituency that
 																are readily detected by immunophenotyping: a technique for delineating
 																the proportions of diverse cell types based on their differential
 																antigen expression. Although the molecular mechanisms underlying these changes are not
-																always clear, SYLARAS helps to implicate specific cell types as responders
-																to a given experimental perturbation (e.g. infectious agent, cancer model,
-																vaccine, immunotherapy, etc.) by quantifying the resultant
-																redistribution in lymphoid tissue cellular architecture.
+																always clear, to ability of SYLARAS to quantify these changes allows the experimentalist
+																to explore the cell-based mechanisms of disease and therapeutic response through
+																inductive scientific inference.</p>
 
-																When immunoreactivity is reported in binary terms, the number of possible immunophenotypes
-																specified by M analytes is 2M. This exponential relationship makes comprehensive exploration
-																of immune cell subsets through manual gating prohibitively labor-intensive and error prone when
-																the number of analytes is greater than about 3 or 4. SYLARAS avoids the complexity and inherent
-																non-commutativities of serial gating strategies in highly-multiplex immunophenotyping studies by
-																taking a unidimensional gating approach. The goal of the procedure is to identify the interface
-																of background autofluorescence and true antibody signal on a per sample and analyte basis. This
-																allows the immunomarker status of each cell to be specified based on its marginal signal
-																intensity distributions. The procedure was facilitated by formatting the study’s N histograms
-																(N tissue types x M immunomarkers x Q mice) as a scrolling HTML table to enable rapid and accurate
-																gate curation and refinement. The signal intensity distribution of unlabeled splenocytes from
-																age-matched normal mice as represented in the respective detection channel was superimposed
-																over each histogram as a fiducial guide revealing how autofluorescence background compared with
-																experimental data (<strong> panels a,b,c </strong>).
+																<br>
+
+																<h2> Cell Subset Identification </h2>
+																<p>When immunoreactivity is reported in binary terms, the number of possible immunophenotypes
+																specified by M analytes is 2<sup>M</sup>. This exponential relationship makes comprehensive cell
+																subset identification in multiplex datasets prohibitively intensive and error prone when pursued
+																by multi-dimensional gating strategies. SYLARAS avoids the complexity and inherent
+																non-commutativities of serial gating by considering a cells immunoreactivity channel-by-channel based
+																on its marginal signal intensity distributions.</p>
+
+																<p>Through a streamlined histogram gating procedure, the inflection point between background
+																	autofluorescence and true antibody signal is defined on a per sample and analyte basis.
+																	Overlaying the signal intensity distribution of unlabeled splenocytes from
+																	age-matched normal mice as represented in the respective detection channel as a fiducial guide
+																	reveals how autofluorescence background compares with experimental data (<strong> panels a,b,c </strong>).
+																	Programmatic subtraction of gate values from each value of their corresponding signal
+																	intensity distributions causes the signal-to-noise interface to be centered at zero and
+																	autofluorescence signal intensities to become negative valued (<strong> panel d </strong>).
+																	Binirization of the transformed data according to mathematical sign (i.e. +/-) then allowed each cell
+																	in the datset to be assigned an 11-dimensional Boolean vector uniquely specifying its immunophenotype.
+																	For example, a cell exhibiting the ordered Boolean vector [0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1] would encode the
+																	immunophenotype CD<sub>a</sub><sup>-</sup>, CD<sub>b</sub><sup>+</sup>+, CD<sub>c</sub><sup>-</sup>,
+																	CD<sub>d</sub><sup>-</sup>, CD<sub>e</sub><sup>+</sup>, CD<sub>f</sub><sup>-</sup>,
+																	CD<sub>g</sub><sup>+</sup>, CD<sub>h</sub><sup>+</sup>, CD<sub>i</sub><sup>-</sup>, CD<sub>j</sub><sup>-</sup>,
+																	CD<sub>k</sub><sup>+</sup>. In the case of 3 analytes, this vectorization procedure is
+																	geometrically conceptualized as the binning of cells across the 2<sup>3</sup> octants of a
+																	3-dimensional cube (<strong> panel e </strong>). In the case of an arbitrary number of analytes,
+																	the vectorization procedure represented the binning of cells across the 2<sup>M</sup> orthants of
+																	an M-dimensional hypercube.</p>
 																<img src="images/sylarasassets/fig2.png" class="img-responsive">
-																After a gate has been specified for each histogram, their values are computationally subtracted from
-																all values of their corresponding signal intensity distributions. This causes the signal-to-noise interface
-																to be centered at zero and autofluorescence signal intensities to become negative valued (<strong> panel d </strong>).
-																Binirization of the transformed data according to mathematical sign (i.e. +/-) then allowed each cell
-																in the datset to be assigned an 11-dimensional Boolean vector uniquely specifying its immunophenotype.
-																For example, a cell exhibiting the ordered Boolean vector [0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1] encodes the
-																immunophenotype CDa-, CDb+, CDc-, CDd-, CDe+, CDf-, CDg+, CDh+, CDi-, CDj-, CDk+. In the case of 3
-																analytes, the vectorization procedure is geometrically conceptualized as the binning of cells across
-																the 23 octants of a 3-dimensional cube (<strong> panel e </strong>). In the case of an arbitrary number
-																of analytes, the vectorization procedure represented the binning of cells across the 2M orthants of
-																an M-dimensional hypercube.</p>
 									        </div>
 									    </div>
 									</div>
@@ -275,21 +283,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									    </div>
 									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 									        <div class="panel-body">
-															<img src="images/sylarasassets/fig1.png" class="img-responsive">
-									            <p>In SYLARAS, (1) an immune perturbagen (glioblastoma cancer cells in
-																this case) is administered to a cohort of mice; a cohort of age-matched
-																control mice receive vehicle only. (2) Various lymphoid tissues are
-																harvested at fixed time points after perturbagen administration.
-																(3) Tissues are processed into single-cell suspensions and plated in
-																a 96 well V-bottom plate. (4) Cells are immunolabeled with an optimized
-																multicolor immunofluorescence panel (OMIP) consisting of 11
-																fluorophore-conjugated antibodies targeting various cell surface antigens
-																and stained with a fixable viability dye (FVD). (5) Single-cell data are
-																acquired in a high-throughput manner by flow cytometry. (6) Raw data files
-																are spectrally deconvolved and gated for viable singlets using conventional
-																approaches. (7) The cleaned data undergo bias curation (see figure 2 below)
-																and are computationally analyzed by the SYLARAS algorithm. workflow for
-																discovery-based immunophenotyping. Click here for SYLARAS Materials and Methods.</p>
+									            <p><strong>(1)</strong> An immune perturbagen or control agent (orthotopically engrafted mouse syngeneic
+																glioblastoma cells in this care) are administered to age-matched cohorts
+																of test and control mice. <strong>(2)</strong> Lymphoid tissues are
+																harvested at fixed time points.
+																<strong>(3)</strong> Tissues are processed into single-cell suspensions and plated in
+																a 96 well V-bottom plate. <strong>(4)</strong> Cells are labeled a 12-color flow cytometry
+																antibody panel optimized and validated for coarse-gained immunophenotyping of mouse
+																lineage committed immune cells (11 antibodies plus fixable viability dye).
+																<strong>(5)</strong> Single-cell data are acquired by high-throughput flow cytometry.
+																<strong>(6)</strong> Raw data files are spectrally deconvolved and gated for viable singlets
+																using a commercially-available software program. <strong>(7)</strong> The cleaned data
+																undergo a histogram gating procedure and are then computationally analyzed by the
+																SYLARAS algorithm. workflow for discovery-based immunophenotyping. Click
+																<a href="https://github.com/gjbaker/sylaras.org" ><strong>here</strong></a>
+																to download the experimental protocol.</p>
+
+																<img src="images/sylarasassets/fig1.png" class="img-responsive">
 									        </div>
 									    </div>
 									</div>
@@ -304,20 +314,29 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									    </div>
 									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 									        <div class="panel-body">
-															<img src="images/sylarasassets/fig3.png" class="img-responsive">
-									            <p>Example dashboard: One of 30 cell type specific SYLARAS dashboards
-																programmatically generated during the initial screen of the GL261 GBM model.
-																(1) immunophenotype alias (2) lineage (3) expressed immunomarkers (4)
-																forward and side scatter distributions (5) Logicle-transformed signal
-																intensity distributions of 11 immunomarkers (6 and 7) Tissue and time
-																point-specific average percent difference (left) and log2 fold-change
+									            <p>SYLARAS combines immunophenotype-specific information on frequency, tissue distribution
+																antigen expression and light scatter properties
+																together with the the results of statistical tests comparing test and control samples
+																in the programatic generation of a set of information-dense graphical dashboards
+																(1 per immunophenotype) that together serve as a comprehensive reference chart detailing
+																a given immune perturbagen's impact on the cellular architecture of mouse lymphoid tissue.
+																The example dashboard shown here was programmatically generated during a SYLARAS
+																screen of a orthotopic glioblastoma model (GL261) in syngeneic C57BL/6 mice. <strong>(1)</strong>
+																immunophenotype alias <strong>(2)</strong> lineage <strong>(3)</strong> expressed
+																immunomarkers <strong>(4)</strong> forward and side scatter distributions <strong>(5)</strong>
+																Logicle-transformed signal intensity distributions of 11 immunomarkers <strong>(6 and 7)</strong>
+																Tissue and time point-specific average percent difference (left) and log2 fold-change
 																(right) between GBM-burdened and control mice (n=8 mice/group/tissue/time point).
 																Icons indicate under what conditions and to what extent statistical significance
-																was achieved. (8) The immunophenotype’s tissue distribution across 5
-																lymphoid organs color-coded as in number 6, (9) Percentage of the full
-																dataset accounted for by the immunophenotype (10) Replicate data across
+																was achieved. <strong>(8)</strong> The immunophenotype’s tissue distribution across 5
+																lymphoid organs color-coded as in number 6, <strong>(9)</strong> Percentage of the full
+																dataset accounted for by the immunophenotype <strong>(10)</strong> Replicate data across
 																the study’s 48 mice showing the percentage of each tissue accounted for
 																by the immunophenotype. </p>
+																<img src="images/sylarasassets/fig3.png" class="img-responsive">
+
+
+
 									        </div>
 									    </div>
 									</div>
@@ -340,7 +359,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 
 							<!-- <p class="colorlib-lead"> <strong> Please cite SYLARAS as reference (1).</strong> </p> -->
 							<p class="colorlib-lead"><strong>(1)</strong> Baker et al. (2019), Systemic Lymphoid Architecture Response
-							Assessment (SYLARAS): A Platform for Discovery-based Immunophenotyping. <strong> The key SYLARAS reference.</strong> </p>
+							Assessment (SYLARAS): A Platform for Discovery-based Immunophenotyping. <strong>Click</strong>
+							<a href="https://github.com/gjbaker/sylaras.org" ><strong>here</strong></a>
+							<strong>to read the key SYLARAS reference.</strong></p>
 
 							<p class="colorlib-lead"><strong>(2)</strong> Gregory J. Baker, Sucheendra K. Palaniappan, Stephanie H. Davis,
 								Jodene K. Moore and Peter K. Sorger. Systemic lymphoid architecture response assessment (SYLARAS):
@@ -378,8 +399,42 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 				</div>
 			</div>
 
+			<div id="licence" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2>Funding</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">
+								MIT License
 
+								Copyright (c) 2018 Greg Baker
 
+								Permission is hereby granted, free of charge, to any person obtaining a copy
+								of this software and associated documentation files (the "Software"), to deal
+								in the Software without restriction, including without limitation the rights
+								to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+								copies of the Software, and to permit persons to whom the Software is
+								furnished to do so, subject to the following conditions:
+
+								The above copyright notice and this permission notice shall be included in all
+								copies or substantial portions of the Software.
+
+								THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+								IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+								FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+								AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+								LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+								OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+								SOFTWARE.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
 
 			<div id="contact" class="colorlib-bg-color">
 				<div class="colorlib-narrow-content">

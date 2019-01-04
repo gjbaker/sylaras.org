@@ -175,6 +175,15 @@ figure {
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
+
+
+
+            a.b {
+              text-decoration: none;
+              color: black; }
+
+
+
       #colorlib-aside #colorlib-main-menu ul li.colorlib-active a {
         color: #000; }
         #colorlib-aside #colorlib-main-menu ul li.colorlib-active a:after {
@@ -409,7 +418,7 @@ body.offcanvas {
 .heading-meta {
   margin-bottom: 15px;
   display: block;
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #999999;
   font-weight: 500;
