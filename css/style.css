@@ -138,7 +138,7 @@ figure {
       text-transform: uppercase;
       letter-spacing: 1px; }
       #colorlib-aside #colorlib-main-menu ul li a {
-        color: rgba(0, 1, 0, 0.4);
+        color: rgba(0, 0, 0, 0.4);
         text-decoration: none;
         position: relative;
         padding: 10px 0;
