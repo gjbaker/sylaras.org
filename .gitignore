@@ -3,3 +3,4 @@ Gemfile.lock
 
 yarn.lock
 *.log
+intaglio_files
