@@ -42,10 +42,10 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#intro">Overview</a></li>
-					<li><a href="#details">Theory</a></li>
+					<li><a href="#details">Details</a></li>
 					<li><a href="#publications">Publications</a></li>
 					<li><a href="#funding">Funding</a></li>
-					<li><a href="#funding">License</a></li>
+					<li><a href="#license">License</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<!-- class="colorlib-active" -->
 				</ul>
@@ -123,12 +123,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 
 					<!-- <h2> About</h2> -->
 
-					<p>SYLARAS is is a modular and extensible framework for the acquisition,
+					<p><b>SYLARAS</b> (<u><b>SY</b></u>stemic <u><b>L</b></u>ymphoid <u><b>A</b></u>rchitecture
+					<u><b>R</b></u>esponse <u><b>AS</b></u>sessment) is a modular and extensible framework for the acquisition,
 						statistical analysis, and tidy graphical display of systems-level immunophenotyping
-						data. It faciliates discovery of cell-based mechanisms of disease and therapeutic resposne
-						in preclinical immunology research by revealing the influence of an arbitrary
-						immunologic stimulus (e.g. infectious agent, cancer
-						model, autoimmune disease, etc.) on lymphoid tissue cellular architecture.</p>
+						data. By quantifying the influence of an arbitrary immunologic stimuli (e.g. infectious agent,
+						cancer, autoimmune disease, vaccine, immunotherapy, etc.) on lymphoid tissue cellular architecture,
+						SYLARAS faciliates discovery of cell-based immune mechanisms in preclinical model systems.</p>
 
 						<p>The technology is comprised of three components. The first is a 12-color flow cytometry
 							antibody panel optimized adn validated for coarse-gained immunophenotyping of mouse
@@ -218,14 +218,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									         </div>
 									    </div>
 									</div>
+									<br>
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingTwo">
 									        <h4 class="panel-title">
 									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-															href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Principle
+															href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Theory
 									            </a>
 									        </h4>
 									    </div>
+
 									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 									        <div class="panel-body">
 															<!-- <h5 <strong> Principle </strong>> -->
@@ -250,11 +252,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 																non-commutativities of serial gating by considering a cells immunoreactivity channel-by-channel based
 																on its marginal signal intensity distributions.</p>
 
-																<p>Through a streamlined histogram gating procedure, the inflection point between background
+																<img src="images/sylarasassets/fig2.png" width="750" height="750" align="right" style="padding:25px;"
+																class="img-responsive"><p>Through a streamlined histogram gating procedure, the inflection point between background
 																	autofluorescence and true antibody signal is defined on a per sample and analyte basis.
 																	Overlaying the signal intensity distribution of unlabeled splenocytes from
 																	age-matched normal mice as represented in the respective detection channel as a fiducial guide
-																	reveals how autofluorescence background compares with experimental data (<strong> panels a,b,c </strong>).
+																	reveals how autofluorescence background compares with experimental data (<strong> panels a-c </strong>).
 																	Programmatic subtraction of gate values from each value of their corresponding signal
 																	intensity distributions causes the signal-to-noise interface to be centered at zero and
 																	autofluorescence signal intensities to become negative valued (<strong> panel d </strong>).
@@ -269,10 +272,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 																	3-dimensional cube (<strong> panel e </strong>). In the case of an arbitrary number of analytes,
 																	the vectorization procedure represented the binning of cells across the 2<sup>M</sup> orthants of
 																	an M-dimensional hypercube.</p>
-																<img src="images/sylarasassets/fig2.png" class="img-responsive">
+
 									        </div>
 									    </div>
 									</div>
+									<br>
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingThree">
 									        <h4 class="panel-title">
@@ -283,7 +287,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									    </div>
 									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 									        <div class="panel-body">
-									            <p><strong>(1)</strong> An immune perturbagen or control agent (orthotopically engrafted mouse syngeneic
+														<img src="images/sylarasassets/fig1.png" width="750" height="750" align="right" style="padding:25px;"
+														class="img-responsive"><p><strong>(1)</strong> An immune perturbagen or control agent (orthotopically engrafted mouse syngeneic
 																glioblastoma cells in this care) are administered to age-matched cohorts
 																of test and control mice. <strong>(2)</strong> Lymphoid tissues are
 																harvested at fixed time points.
@@ -299,10 +304,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 																<a href="https://github.com/gjbaker/sylaras.org" ><strong>here</strong></a>
 																to download the experimental protocol.</p>
 
-																<img src="images/sylarasassets/fig1.png" class="img-responsive">
 									        </div>
 									    </div>
 									</div>
+
+									<br>
 
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingFive">
@@ -314,7 +320,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 									    </div>
 									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 									        <div class="panel-body">
-									            <p>SYLARAS combines immunophenotype-specific information on frequency, tissue distribution
+														<img src="images/sylarasassets/fig3.png" width="750" height="750" align="right" style="padding:25px;"
+														class="img-responsive"><p>SYLARAS combines immunophenotype-specific information on frequency, tissue distribution
 																antigen expression and light scatter properties
 																together with the the results of statistical tests comparing test and control samples
 																in the programatic generation of a set of information-dense graphical dashboards
@@ -333,9 +340,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 																dataset accounted for by the immunophenotype <strong>(10)</strong> Replicate data across
 																the study’s 48 mice showing the percentage of each tissue accounted for
 																by the immunophenotype. </p>
-																<img src="images/sylarasassets/fig3.png" class="img-responsive">
-
-
 
 									        </div>
 									    </div>
@@ -374,11 +378,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 								July 1 2017 (77) (13 Supplement) 1678; DOI: 10.1158/1538-7445.AM2017-1678</p>
 
 						</div>
-
 					</div>
 				</div>
 			</div>
 
+			<br>
+			<br>
+			<br>
 
 			<div id="funding" class="colorlib-bg-color">
 				<div class="colorlib-narrow-content">
@@ -394,47 +400,54 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 								National Institutes of Health P50 grant (GM107618) awarded to Peter K. Sorger, and
 								a National Cancer Institute U54 multicenter grant (CA225088) awarded to Peter K. Sorger.</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
 
-			<div id="licence" class="colorlib-bg-color">
+			<br>
+			<br>
+			<br>
+
+			<div id="license" class="colorlib-bg-color">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<h2>Funding</h2>
+							<h2>Terms of Use</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<p class="colorlib-lead">
-								MIT License
+							<p class="colorlib-lead"><p>SYLARAS is intened for academic not-for-profit use.</p>
 
-								Copyright (c) 2018 Greg Baker
+							<p>MIT License</p>
 
-								Permission is hereby granted, free of charge, to any person obtaining a copy
-								of this software and associated documentation files (the "Software"), to deal
-								in the Software without restriction, including without limitation the rights
-								to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-								copies of the Software, and to permit persons to whom the Software is
-								furnished to do so, subject to the following conditions:
+							<p>Copyright (c) 2018 Gregory J. Baker</p>
 
-								The above copyright notice and this permission notice shall be included in all
-								copies or substantial portions of the Software.
+							<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+							of this software and associated documentation files (the "Software"), to deal
+							in the Software without restriction, including without limitation the rights
+							to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+							copies of the Software, and to permit persons to whom the Software is
+							furnished to do so, subject to the following conditions:</p>
 
-								THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-								IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-								FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-								AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-								LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-								OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-								SOFTWARE.</p>
+							<p>The above copyright notice and this permission notice shall be included in all
+							copies or substantial portions of the Software.</p>
+
+							<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+							IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+							FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+							AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+							LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+							OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+							SOFTWARE.</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
+
+			<br>
+			<br>
+			<br>
 
 			<div id="contact" class="colorlib-bg-color">
 				<div class="colorlib-narrow-content">
