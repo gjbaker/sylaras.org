@@ -40,11 +40,12 @@
 			<h5 align="right">A platform for discovery-based immunophenotyping</h5>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#intro">Overview</a></li>
+					<li><a href="index.html">Overview</a></li>
+					<!-- <li><a href="#intro">Overview</a></li> -->
 					<li><a href="#details">Details</a></li>
 					<li><a href="#publications">Publications</a></li>
 					<li><a href="#funding">Funding</a></li>
+					<li><a href="#cite">Citation</a></li>
 					<li><a href="#license">License</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<!-- class="colorlib-active" -->
@@ -130,15 +131,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 						cancer, autoimmune disease, vaccine, immunotherapy, etc.) effect on lymphoid tissue cellular architecture,
 						SYLARAS facilitates discovery of cell-based immune mechanisms in preclinical model systems.</p>
 
-						<p>The SYLARAS technology is comprised of three components: the first is a <b>12-color flow cytometry
-							antibody panel</b> optimized and validated for coarse-gained immunophenotyping of mouse
-							lineage committed immune cells. The second is a <b>detailed experimental protocol</b> describing
-							the method of tissue collection, processing, and high-throughput immunophenotyping.
-							Third component is an <b>computational tool</b> written in the Python programming
+						<p>The SYLARAS technology is comprised of three components: the first is a
+							<a href="https://github.com/gjbaker/sylaras.org"> <b>12-color flow cytometry antibody panel</b></a>
+							optimized and validated for coarse-gained immunophenotyping of mouse
+							lineage committed immune cells. The second is a
+							<a href="https://github.com/gjbaker/sylaras.org"> <b>detailed experimental protocol</b></a>
+							describing the method of tissue collection, processing, and high-throughput immunophenotyping.
+							Third component is an <a href="https://github.com/gjbaker/sylaras.org"> <b>computational data
+							analysis tool</b></a> written in the Python programming
 							language and run at the command-line of a personal computer. The algorithm
 							transforms quantitative single-cell data into a set of data-rich graphical dashboards (1 per immunophenotype)
 							that together serve as a visual compendium of the time and tissue-dependent changes
 							occurring in systemic cellular immune architecture in response to immune perturbation.</p>
+
+							<p>The SYLARAS algorithm is a copyrighted, open-source software intended for non-profit
+								academic use.</p>
+
 
 					<!-- <font size="2.5"><p><b>SYLARAS </b> is a modular and extensible experimental framework for the acquisition, statistical analysis, and tidy display of discovery-based immunophenotyping data.
 							     <br></p> -->
@@ -365,7 +373,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 							<p class="colorlib-lead"><strong>(1)</strong> Baker et al. (2019), Systemic Lymphoid Architecture Response
 							Assessment (SYLARAS): A Platform for Discovery-based Immunophenotyping. <strong>Click</strong>
 							<a href="https://github.com/gjbaker/sylaras.org" ><strong>here</strong></a>
-							<strong>to read the key SYLARAS reference.</strong></p>
+							<strong>to read the SYLARAS manuscript.</strong></p>
 
 							<p class="colorlib-lead"><strong>(2)</strong> Gregory J. Baker, Sucheendra K. Palaniappan, Stephanie H. Davis,
 								Jodene K. Moore and Peter K. Sorger. Systemic lymphoid architecture response assessment (SYLARAS):
@@ -395,16 +403,38 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<p class="colorlib-lead">The SYLARAS project was made possible by an American Cancer
-								Society Postdoctoral Fellowship (PF-16-197-01-LIB) awarded to Gregory J. Baker, a
-								National Institutes of Health P50 grant (GM107618) awarded to Peter K. Sorger, and
-								a National Cancer Institute U54 multicenter grant (CA225088) awarded to Peter K. Sorger.</p>
+							<p class="colorlib-lead">SYLARAS was made possible by an American Cancer
+								Society Postdoctoral Fellowship (PF-16-197-01-LIB) awarded to Gregory J. Baker, and both a
+								National Institutes of Health P50 grant (GM107618) and National Cancer Institute U54
+								multicenter grant (CA225088) awarded to Peter K. Sorger.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<br>
+			<br>
+
+			<div id="cite" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2>Citation</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+
+							<p class="colorlib-lead">Please cite the SYLARAS approach to discovery-based
+								immunophenotyping and the use of its resources as: Baker et al. (2019),
+								Systemic Lymphoid Architecture Response Assessment (SYLARAS): A Platform
+								for Discovery-based Immunophenotyping.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<br>
 			<br>
 
@@ -417,7 +447,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<p class="colorlib-lead"><p>SYLARAS is intened for academic not-for-profit use.</p>
+							<p class="colorlib-lead"><b><p>SYLARAS is intended for non-profit academic use.</p></b>
 
 							<p>MIT License</p>
 
@@ -475,13 +505,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script></smal
  <input type="email" id="email" name="senderEmail" placeholder="">
 
  <label for="affiliation">Affiliation</label>
- <input type="text" id="affiliation" name="affiliation" placeholder="university, institute, company, etc.">
+ <input type="text" id="affiliation" name="affiliation" placeholder="">
 
  <label for="country">Country</label>
  <input type="text" id="country" name="country" placeholder="">
 
- <label for="subject">Subject</label>
- <textarea id="subject" name="subject" placeholder="Your inquery.." style="height:100px"></textarea>
+ <label for="subject">Your Inquiry</label>
+ <textarea id="subject" name="subject" placeholder="" style="height:100px"></textarea>
 
  <input type="Submit" value="Submit">
 
