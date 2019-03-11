@@ -1,5 +1,3 @@
-**SYLARAS experimental protocol**
-
 **General reagents.** ddH~2~0; RPMI-1640 (Corning, Cat. No. 10-040-CV);
 L-glutamine (Gibco, Cat. No. 25030-081); penicillin-streptomycin (10,000
 U/mL) (ThermoFisher Scientific, Cat. No. 15140-163); heat-inactivated
@@ -696,3 +694,58 @@ compensation controls according to the first 4 steps of the gating
 strategy outlined above then exported as new FCS3.0 files; the aggregate
 of such files from each of the study’s 3 time points served as input
 into our computational data analysis algorithm.
+
+**Weighted Random Sampling.** A 10 million cell weighted random sample
+(WRS) was derived from the pre-processed flow cytometry data to help
+balance the number of cells per tissue sample. Sample weights were
+defined per tissue per cell according to the formula \[(1/ω) x
+(1/N*~i~*)\] where ω was the number of unique tissue types (5 in this
+cases) and N*~i~* was the number of events associated with the *i*^th^
+tissue where *i* took the categorical values blood, marrow, nodes,
+spleen, thymus.
+
+**Histogram Gating.** Pre-processed flow cytometry data (i.e.
+compensated viable singlets) were displayed as 2,640 histograms (240
+samples x 11 antibody detection channels) plotted on a Logicle^56^ scale
+and formatted as scalable vector graphics (SVGs) in the context of a
+scrolling HTML table viewable with a web browser. A KDE of the signal
+intensity distribution of cells from the FVD well (i.e. compensated
+unstained viable splenocytes) was superimposed on each to identify
+signal intensity values corresponding to autofluorescence background.
+This allowed for the rapid recording of bisection point at the interface
+of the first (autofluorescence) and second (true signal) peaks for all
+histograms in a .TXT file. A vertical line was then programmatically
+rendered at the location of each bisection point and again visualized as
+a scrolling HTML table on the web for confirmation or refinement. The
+numerical value of each bisection point was then Logicle-transformed and
+subtracted from the Logicle-transformed signal intensity values of its
+corresponding histogram (i.e. Logicle\[data point~i~\]) –
+Logicle\[bisection point\]) resulting in the Logicle-transformed
+bisection point assuming the numerical value of zero and background
+signal intensity values becoming negative valued. Since the 5 lymphoid
+tissue types predominately consisted of immune cells, the CD45 signal
+intensity distributions were invariable unimodal with no discernable
+local minima. Thus, for each time point and tissue combination, a common
+CD45 bias was curated by pooling the corresponding samples, computing
+Q25 – \[1.5 \* \[Q75 - Q25\]\], then rounding to the nearest multiple of
+5. (where Q25 and Q75 were the first and third quartiles of the
+Logicle-transformed data, respectively).
+
+Immunophenotypes interpreted as CD49b^+^ granulocytes were identified in
+the blood of both control and GBM mice. Since granulocyte interaction
+with CD49b^+^ platelets is a described phenomenon thought to represent a
+physiologic process required for neutrophil extracellular trap
+formation^57,58^, we considered these cells as a likely artifact of
+residual platelets present within blood samples. In taking a
+conservative approach to correct for this discrepancy, cell status of
+the CD49b immunomarkers was only considered in cases where the
+immunophenotype was otherwise consistent with NK cells (e.g. CD45^+^,
+CD49b^+^, CD11b^+^). Thus, a Boolean truth value of zero for the CD49b
+channel was uniformly applied to all cells whose immunophenotype was not
+matching NK cells.
+
+**Software**
+
+• FACSDiva (version 8.0)
+
+• FlowJo (version 10.3.0)
