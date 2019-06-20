@@ -286,9 +286,9 @@
 																number of possible immunophenotypes
 																specified by a panel of M antibodies is 2<sup>M</sup>. This exponential relationship
 																makes comprehensive cell subset identification through serial gating strategy cumbersome,
-																time consuming, non-commutative. SYLARAS avoids these drawbacks of cell subset identification
+																time consuming, and non-commutative. SYLARAS avoids these drawbacks of cell subset identification
 																through point-and-click analysis programs by specifying a cell immunoreactivity on a
-																channel-by-channel basis through a computer-assisted unidimensional gating procedure.</p>
+																channel-by-channel basis using a computer-assisted gating procedure.</p>
 
 																<img src="images/sylarasassets/fig1.png" width="750" height="750" align="right" style="padding:25px;"
 																class="img-responsive"><p>In this procedure, the interface between background
@@ -300,8 +300,8 @@
 																	experimental data (<strong> panel a </strong>).<p/>
 
 																	<p>Histograms are then programmatically transformed to center the gate at zero,
-																		causing background signal intensities to become negative valued. Thus, each cell in
-																		the dataset can be assigned an M-dimensional Boolean vector fully specifying
+																		causing background signal intensities to become negative valued. Each cell in
+																		the dataset can then be assigned an M-dimensional Boolean vector fully specifying
 																		its immunophenotype by binarizing signal intensity values according to
 																		their sign (+/-) (<strong> panel b </strong>).
 
@@ -312,11 +312,11 @@
 																		CD<sub>g</sub><sup>-</sup>, CD<sub>h</sub><sup>+</sup>, CD<sub>i</sub><sup>+</sup>,
 																		CD<sub>j</sub><sup>-</sup>, CD<sub>k</sub><sup>-</sup><p/>
 
-																	<p>In the case of an immunomarker panel of just 3 antibodies, the vectorization procedure
-																		is geometrically conceptualized as the binning of cells across the 2<sup>3</sup> (= 8)
-																		octants of a 3-dimensional cube (<strong> panel c </strong>). Extrapolating this
-																		principle into higher dimensions (i.e. more immunomarkers), the vectorization procedure
-																		is conceptualized as the binning of cells across the 2<sup>M</sup> orthants of an
+																	<p>In the case of an immunomarker panel of 3 antibodies, the vectorization procedure
+																		can be geometrically conceptualized as the binning of cells across the 2<sup>3</sup> (= 8)
+																		octants of the 3-dimensional cube (<strong> panel c </strong>). Extrapolating this
+																		principle to higher dimensions (i.e. more immunomarkers), the vectorization procedure
+																		is equivalent to the binning of cells across the 2<sup>M</sup> orthants of an
 																		M-dimensional hypercube.</p>
 
 									        </div>
