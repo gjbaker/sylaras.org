@@ -298,10 +298,9 @@
 																	immunolabeled distribution to aid in objective gate placement by revealing how autofluorescence and/or
 																	isotype control antibody binding compares with observed data (<strong> panel a </strong>).<p/>
 
-																	<p>The single-cell data then undergoes a linear data transformation that centers the predetermined gates at zero.
-																		This causes background signal intensities to become negative valued and allows for the programmatic assignment to every cell in
-																		the analysis an M-dimensional Boolean vector that fully specifies cellular immunophenotype by binarizing signal intensity
-																		values according to their mathematical sign (+/-) (<strong> panel b </strong>).
+																	<p>The single-cell data then undergoes a linear data transformation that centers the predetermined gate values at zero.
+																		This causes background signal intensities to become negative valued so that an M-dimensional Boolean immunophenotype
+																		can be programmatically generated for each cell in the dataset (<strong> panel b </strong>).
 
 																		For example, a cell assigned the Boolean vector [1, 0, 1, 1, 0, 0, 0, 1, 1 ,0, 0] might
 																		correspond to the immunophenotype:
