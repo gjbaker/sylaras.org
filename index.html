@@ -286,24 +286,22 @@
 																number of possible immunophenotypes
 																specified by a panel of M antibodies is 2<sup>M</sup>. This exponential relationship
 																makes comprehensive cell subset identification through serial gating cumbersome,
-																time consuming, and non-commutative. SYLARAS avoids these drawbacks of cell subset identification
-																through point-and-click analysis programs by specifying a cell immunoreactivity on a
-																channel-by-channel basis using a computer-assisted gating procedure.</p>
+																time consuming, and, in many cases, non-commutative. SYLARAS addresses the drawbacks of manual gating
+																through computation by programmatically assigning an immunophenotype bar code to each cell in the analysis in such
+																a way that the gating is performed in parallel rather than series.</p>
 
 																<img src="images/sylarasassets/fig1.png" width="750" height="750" align="right" style="padding:25px;"
 																class="img-responsive"><p>In this procedure, the interface between background
 																	and foreground signal is defined for each immunomarker by curating a set of
-																	unidimensional gates based on signal intensity distributions (i.e. histograms).
-																	To aid in objective gate placement, the signal intensity distribution of
-																	unlabeled/isotype labeled cells is super-imposed on the immunolabeled distribution to
-																	reveal how autofluorescence/off-target antibody binding compares with
-																	experimental data (<strong> panel a </strong>).<p/>
+																	one dimensional gates.
+																  The signal intensity distribution of unlabeled/isotype labeled cells is super-imposed on the
+																	immunolabeled distribution to aid in objective gate placement by revealing how autofluorescence and/or
+																	isotype control antibody binding compares with observed data (<strong> panel a </strong>).<p/>
 
-																	<p>Histograms are then programmatically transformed to center the gate at zero,
-																		causing background signal intensities to become negative valued. Each cell in
-																		the dataset can then be assigned an M-dimensional Boolean vector fully specifying
-																		its immunophenotype by binarizing signal intensity values according to
-																		their sign (+/-) (<strong> panel b </strong>).
+																	<p>The single-cell data then undergoes a linear data transformation that centers the predetermined gates at zero.
+																		This causes background signal intensities to become negative valued and allows for the programmatic assignment to every cell in
+																		the analysis an M-dimensional Boolean vector that fully specifies cellular immunophenotype by binarizing signal intensity
+																		values according to their mathematical sign (+/-) (<strong> panel b </strong>).
 
 																		For example, a cell assigned the Boolean vector [1, 0, 1, 1, 0, 0, 0, 1, 1 ,0, 0] might
 																		correspond to the immunophenotype:
@@ -315,8 +313,8 @@
 																	<p>In the case of an immunomarker panel of 3 antibodies, the vectorization procedure
 																		can be geometrically conceptualized as the binning of cells across the 2<sup>3</sup> (= 8)
 																		octants of the 3-dimensional cube (<strong> panel c </strong>). Extrapolating this
-																		principle to higher dimensions (i.e. more immunomarkers), the vectorization procedure
-																		is equivalent to the binning of cells across the 2<sup>M</sup> orthants of an
+																		principle into higher dimensions (i.e. more immunomarkers), the vectorization procedure
+																		is analogous to the binning of cells across the 2<sup>M</sup> orthants of an
 																		M-dimensional hypercube.</p>
 
 									        </div>
